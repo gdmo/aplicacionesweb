@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-image: url('../fotos/index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: visible;
+}
+
+@font-face {
+    font-family: "Amarillo";
+    src: url(../fuentes/Amarillo.otf),
+        url(../fuentes/Amarillo.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    font-family: "Amarillo";
+    font-size: large;
+    margin-left: 20px;
+}
+
+h1 a {
+    all: unset;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+.links-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.links-menu li a {
+    all: unset;
+    display: inline-block;
+    position: relative;
+    right: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.links-menu li a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    color: black;
+    cursor: pointer;
+}
+
+.links-menu li a:visited {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+.formulario {
+    position: fixed;
+    top: 10%;
+    bottom: 20%;
+    left: 28%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    overflow-y: auto;
+    background-image: url(../fotos/gatito.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.formulario-grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #b4692b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #1c1c1caf;
+    color: #ffffff;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.footer-seccion.izda {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 2px;
+}
+
+.footer-seccion.centro {
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-list li {
+    margin-bottom: 5px;
+}
+
+.footer-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: green;
+}
+
+.footer-seccion.drcha {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-iconos {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-iconos img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-iconos img:hover {
+    transform: scale(1.5);
+    /* Agranda el ícono al pasar el ratón */
+}

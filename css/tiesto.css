@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-image: url('../fotos/tiesto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: "Amarillo";
+    src: url(../fuentes/Amarillo.otf),
+        url(../fuentes/Amarillo.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: rgba(7, 237, 233, 0.8);
+}
+
+h1 {
+    font-family: "Amarillo";
+    font-size: large;
+    margin-left: 20px;
+}
+
+h1 a {
+    all: unset;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+.links-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.links-menu li a {
+    all: unset;
+    position: relative;
+    right: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.links-menu li a:hover {
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    color: black;
+    cursor: pointer;
+}
+
+.links-menu li a:visited {
+    color: #004DF1;
+}
+
+#general {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 0%;
+    right: 0%;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 60%;
+    gap: 1rem;
+}
+
+.contenido {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    margin: 0 auto 2rem auto;
+    align-items: center;
+    border: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.38);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.48);
+    padding: 16px;
+}
+
+.contenido img {
+    float: left;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+#retardo {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out, transform 5s ease-in-out;
+}
+
+#retardo:hover {
+    opacity: 0;
+}
+
+.contenido iframe {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 400px;
+}
+
+.contenido p {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    flex: 1;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+    border: 5px ridge #da681c;
+}
+
+th,
+td {
+    font-weight: bold;
+    border: 5px ridge #da681c;
+    padding: 8px;
+    text-align: left;
+    margin: auto;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f3e2c786;
+    /* Color alternado para filas impares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff8f;
+    /* Color para filas pares */
+}
+
+.contenido audio {
+    float: left;
+    width: 200px;
+    margin-right: 16px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.438);
+}
+
+#audio {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    display: block;
+    margin-left: 220px;
+    padding-top: 8px;
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #1c1c1caf;
+    color: #ffffff;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.footer-seccion.izda {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 2px;
+}
+
+.footer-seccion.centro {
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-list li {
+    margin-bottom: 5px;
+}
+
+.footer-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: green;
+}
+
+.footer-seccion.drcha {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-iconos {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-iconos img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-iconos img:hover {
+    transform: scale(1.5);
+    /* Agranda el ícono al pasar el ratón */
+}
